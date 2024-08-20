@@ -1,0 +1,157 @@
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+:root {
+    --azul-noche: #1A1B41;
+    --lila: #C5A3FF;
+    --azul-jacinto: #3E98A8;
+    --blanco: #FFFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blanco);
+    background-color: var(--azul-noche);
+    line-height: 1.6;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    background-image:url('/assets/img/fondo.jpg');;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el header */
+    background-position: center; /* Centra la imagen */
+    height: 300px; /* Ajusta la altura del header */
+    color: white; /* Color del texto para que sea visible sobre la imagen */
+}
+
+.header .nombre {
+    color: var(--lila);
+    font-size: 2.5rem;
+}
+
+.header .titulo {
+    color: var(--azul-jacinto);
+    font-size: 1.5rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.nav a {
+    color: var(--lila);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--azul-jacinto);
+}
+
+.seccion {
+    padding: 4rem 2rem;
+    
+}
+
+.sobre-mi {
+    background-color: var(--azul-jacinto);
+    color: var(--blanco);
+    flex: 1;
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    gap: 10px; 
+}
+.justificado {
+    text-align: justify;
+}
+#creador-img {
+    width:300px; /* Ajusta el tamaño según lo desees */
+    height: auto;
+    border-radius: 20%; /* Para hacer la imagen circular (opcional) */
+    margin-left: 920px;
+    margin-top: -150px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.proyectos .proyecto {
+    background-color: var(--lila);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.proyectos .proyecto:hover {
+    background-color: var(--azul-jacinto);
+    color: var(--blanco);
+}
+
+.habilidades ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.habilidades li {
+    background-color: var(--lila);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto input, .contacto textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 1rem;
+    background-color: var(--azul-jacinto);
+    border: none;
+    color: var(--blanco);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: var(--lila);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--azul-noche);
+    color: var(--lila);
+}
